@@ -11,15 +11,11 @@ const changeModalState = (state) => {
     checkNumInputs('#width');
     checkNumInputs('#height');
 
-    function checkEmptiness(property) {
-        return (property) ? true : false
-    }
+    
 
 
 
     function bindActionToElems(event, elem, prop) {
-
-        
 
         elem.forEach((item, i) => {
             item.addEventListener(event, () => {
